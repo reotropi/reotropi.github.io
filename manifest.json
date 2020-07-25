@@ -1,0 +1,22 @@
+{
+    "name": "Liga Inggris",
+    "short_name": "Liga Inggris",
+    "description": "Seputar Liga Inggris",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "/images/logo_soccer_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logo_soccer.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "gcm_sender_id": "162715161645"
+}
