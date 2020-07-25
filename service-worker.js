@@ -42,7 +42,7 @@ workbox.precaching.precacheAndRoute([
 ]);
 
 workbox.routing.registerRoute(
-	/\.(?:png|gif|jpg|jpeg|svg|ico|js|html)$/,
+	/\.(?:png|jpg|jpeg|svg|ico|js|html|css|eot|ttf|woff|woff2|json)$/,
 	workbox.strategies.staleWhileRevalidate(),
 )
 
@@ -68,6 +68,21 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
 	/js/,
+	workbox.strategies.staleWhileRevalidate(),
+)
+
+workbox.routing.registerRoute(
+	/css/,
+	workbox.strategies.staleWhileRevalidate(),
+)
+
+workbox.routing.registerRoute(
+	/fonts/,
+	workbox.strategies.staleWhileRevalidate(),
+)
+
+workbox.routing.registerRoute(
+	/iconfont/,
 	workbox.strategies.staleWhileRevalidate(),
 )
 
